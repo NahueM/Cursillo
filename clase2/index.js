@@ -4,7 +4,7 @@
 
 //se declara la funcion con la palabra reservada function
 function saludar(){
-	console.log("Hola Loco!!")
+	console.log("Hola Locooo!!")
 }
 //se la ejecuta llamando
 saludar();
@@ -149,6 +149,38 @@ var muchos = (foo, bar, ...args) =>{
 }  
 
 console.log(muchos("bar1", "bar2", "bar3", "bar4", "bar5", "bar6"));
+
+
+//-------------------------------------------------------------------------------------------------------------------------
+
+//CALLBACKS se llama callback a la funcion que se pasa como parametro que nos devuelve una respuesta
+
+
+//creamos una func y le pasamos como parametro otra func
+function saludar(callback) {
+    callback();
+}
+
+//cuando llamamos a saludar tiene una func anonima que imprime por consola Que Ta l!!
+saludar(function(){
+    console.log('Que Tal !!');
+});
+
+// Veamos algo mas complejo
+let num1= 23;
+let num2= 19;
+
+//creo una func sumar que recibe de parametro a,b para que los use la func callback
+function sumar(a, b, callback){
+    return callback(a+b);
+}
+
+
+//  le pasamos los parametros num1 y num2 y a su ves la respuesta del callback con el resultado
+// recordemos q function(r) es = a callback(a+b)
+Sumar(num1, num2, function(r){
+    console.log('El resultado es ' + r);
+})
 
 
 
