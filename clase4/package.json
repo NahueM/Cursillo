@@ -1,0 +1,11 @@
+{
+  "name": "promises",
+  "version": "1.0.0",
+  "description": "ejemplo de promesas vs callbacks",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nahuel Maya",
+  "license": "MIT"
+}
