@@ -1,2 +1,2 @@
 # Cursillo
-Mini curso JavaScript
+Mini curso JavaScript para los chicos del trabajo 
